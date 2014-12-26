@@ -1,18 +1,102 @@
-body {
-  background-color: #FFCC66;
-  /* Typography Declarations */
-  color: #222222;
-  font-size: 1em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+/* Color Palette Ideas 
+  http://paletton.com/#uid=70w0u0kjdw09gQ4eFFVn8sArkoa
+  Blue:   #5069AC
+  Orange: #FFCE66 
   
+  -OR-
+  
+  http://paletton.com/#uid=73D0u0km+DhcPR8irK0rNynvGrj
+  Blue:   #4178BE
+  Orange: #FFB948 */
+
+
+/* START Link Styling */
+/* Unvisited Link */
+.intro a:link,
+.where a:link,
+.more a:link {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.footer a:link {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Visitsed Link */
+.intro a:visited,
+.where a:visited,
+.more a:visited {
+  color: #FFB948;
+  text-decoration: underline;
+}
+
+.footer a:visited {
+  color: #4178BE;
+  text-decoration: underline;
+}
+
+/* Link Hover */
+.intro a:hover,
+.where a:hover,
+.more a:hover {
+  background-color: #5289CF;
+  border: #5289CF;
+}
+
+.footer a:hover {
+  background-color: #FFCA59;
+  border: #FFCA59;
+}
+
+/* END Link Styling */
+
+/* START Body Styling */
+body {
+  background-color: #4178BE;
+  /* Typography Declarations */
+  color: #FEFEFE;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+}
+/* END Body Styling */
+
+/* START Masthead Styling */
+.masthead {
+  background-image: url('https://farm6.staticflickr.com/5587/14266052528_2a7e7f5ae4_k.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8em 0;
 }
 
 .masthead-h1,
-.masthead-intro, 
-.footer {
-    text-align: center;
+.masthead-intro {
+  text-align: center;
 }
 
+.masthead-intro {
+  /* Typography Declarations */
+  color: #FFF;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+
+.masthead-h1 {
+  /* Typography Declarations */
+  color: #FFF;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  font-variant: small-caps;
+  margin-top: -0.1em;
+}
+/* END Masthead Styling */
+
+/* START Content Styling */
 .intro,
 .where,
 .more {
@@ -22,72 +106,63 @@ body {
   margin-top: 2em;
 }
 
-.masthead {
-  background-image: url('https://ununsplash.imgix.net/photo-1416339672936-7fe434088e8c?q=75&fm=jpg&s=56184654e18350b3f7f872747a7b9e61');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-top: solid 1em #111111;
-  padding: 6em 0;
-}
-
-.masthead-intro {
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 0.1em;
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 2em;
-  opacity: 1;
-}
-
-.masthead-h1 {
-  text-align: center;
-  color: #FFFFFF;
-  margin-top: -0.2em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: -0.02em;
-  font-variant: small-caps;
-}
-
 .intro > p,
-.where > p,
-.footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
+.where > p {
+  /* Typography Declarations */
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 125%;
 }
 
 .intro > h1,
 .where > h1,
-.more  > h1 {
-    /* Typography Declarations */
-    font-weight: bold;
-    color: #222222;
-    font-variant: small-caps;
-}
-
-.more > h2 {
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
+.more > h1 {
+  /* Typography Declarations */
+  font-weight: bold;
+  color: #FEFEFE;
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
 }
 
 .more {
   padding-bottom: 1em;
+  line-height: 125%;
 }
 
+.more .h3 {
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.more-quote {
+  border-left: solid #fefefe;
+  border-left-width: thin;
+  padding-left: 1em;
+}
+
+
+/* START Footer Styling */
 .footer {
-  background-color: #FEFDFC;
-  padding: 1.5em 0;
+  background-color: #FFB948;
+  padding: 1em 0;
+  text-align: center;
 }
 
 .footer > p {
- color: black;
+  /* Typography Declarations */
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 120%;
 }
 
 .social > li {
     display: inline-block;
+    padding: .5em 0;
+    margin-left: .5em;
+    margin-right: .5em;
 }
+/* END Footer Styling */
