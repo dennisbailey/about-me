@@ -172,16 +172,16 @@ body {
 	cursor: pointer;
 }
 
+.footer .instagram {
+	color: #3f729b;
+}
+
 .footer .twitter {
 	color: #55acee;
 }
 
-.footer .facebook {
-	color: #4c66a4;
-}
-
-.footer .instagram {
-	color: #3f729b;
+.footer .envelope {
+	color: #FFFFFF;
 }
 
 /* END Footer Styling */
